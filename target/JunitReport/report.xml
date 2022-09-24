@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="13.831">
+<testcase classname="Feature to test login functionality to swag labs web application" name="Check if login is successfully with valid Credentials" time="8.203">
+<system-out><![CDATA[Given user is in login page.................................................passed
+When user add valid username and password...................................passed
+And click login button......................................................passed
+Then user navigate to home page.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test login functionality to swag labs web application" name="Check Login is successfully with invalid Credentials" time="5.215">
+<system-out><![CDATA[Given user is in login page.................................................passed
+When user add invalid username and password.................................passed
+And click login button......................................................passed
+Then user will not navigate to home page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
