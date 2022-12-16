@@ -10,14 +10,14 @@ import org.testng.Assert;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST11_AddDifferentProductsToCompareListCard extends TestBase{
+public class ST11_AddDifferentProductsToCompareListCard extends Hooks {
     P02_LoginPage loginPage;
     P03_HomePage homePage;
     P04_ShoesPage shoesPage;
     P05_NotebookPage notebookPage;
     @Given("user login Successfully")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

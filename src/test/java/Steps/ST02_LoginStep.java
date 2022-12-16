@@ -12,13 +12,13 @@ import org.example.pages.P02_LoginPage;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST02_LoginStep extends TestBase{
+public class ST02_LoginStep extends Hooks {
 
 	P02_LoginPage loginPage;
 
 	@Given("user is in login page")
 	public void user_is_in_login_page() {
-		prepareClassProperties("Chrome");
+		initialization("Chrome");
 		startApplication();
 	}
 

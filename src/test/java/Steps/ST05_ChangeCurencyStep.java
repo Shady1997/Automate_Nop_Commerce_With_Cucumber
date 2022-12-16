@@ -10,14 +10,14 @@ import org.testng.Assert;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST05_ChangeCurencyStep extends TestBase{
+public class ST05_ChangeCurencyStep extends Hooks {
 
     P02_LoginPage loginPage;
     P03_HomePage homePage;
     String firstOption;
     @Given("user login to nop commerce")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

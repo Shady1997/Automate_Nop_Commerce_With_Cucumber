@@ -9,14 +9,14 @@ import org.junit.Assert;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST12_CreateSuccessfulOrder extends TestBase{
+public class ST12_CreateSuccessfulOrder extends Hooks {
 
     P02_LoginPage loginPage;
     P03_HomePage homePage;
     P06_CheckOutPage checkOutPage;
     @Given("user login Successfully to Nop Commerce App")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

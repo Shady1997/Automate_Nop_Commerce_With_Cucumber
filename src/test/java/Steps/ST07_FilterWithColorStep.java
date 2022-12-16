@@ -7,7 +7,6 @@ import org.example.pages.P02_LoginPage;
 import org.example.pages.P03_HomePage;
 import org.example.pages.P04_ShoesPage;
 import org.example.pages.PageBase;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -16,14 +15,14 @@ import java.util.List;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST07_FilterWithColorStep extends TestBase{
+public class ST07_FilterWithColorStep extends Hooks {
 
     P02_LoginPage loginPage;
     P03_HomePage homePage;
     P04_ShoesPage shoesPage;
     @Given("user login to the application")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

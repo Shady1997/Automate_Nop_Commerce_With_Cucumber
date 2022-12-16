@@ -11,12 +11,12 @@ import org.testng.Assert;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST06_HoverAndSelectStep extends TestBase{
+public class ST06_HoverAndSelectStep extends Hooks {
     P02_LoginPage loginPage;
     P03_HomePage homePage;
     @Given("user login to Application")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

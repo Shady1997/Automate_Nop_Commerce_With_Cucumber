@@ -6,21 +6,20 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.example.pages.P02_LoginPage;
 import org.example.pages.P03_HomePage;
-import org.example.pages.PageBase;
 
 import java.io.IOException;
 
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST04_CheckSearchStep extends TestBase{
+public class ST04_CheckSearchStep extends Hooks {
 
     P02_LoginPage loginPage;
     P03_HomePage homePage;
 
     @Given("user login to nop commerce web application")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

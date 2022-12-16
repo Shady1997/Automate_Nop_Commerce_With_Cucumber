@@ -6,18 +6,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.Assert;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.example.pages.P01_RegistrationPage;
 import org.example.pages.PageBase;
 
-public class ST01_RegistrationStep extends TestBase{
+public class ST01_RegistrationStep extends Hooks {
 
     P01_RegistrationPage registrationPage;
     public static String email;
     public static String password;
     @Given("user is in main page")
     public void userInMainPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

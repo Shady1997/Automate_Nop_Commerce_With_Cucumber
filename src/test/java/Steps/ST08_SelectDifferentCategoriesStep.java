@@ -13,14 +13,14 @@ import org.testng.Assert;
 import static Steps.ST01_RegistrationStep.email;
 import static Steps.ST01_RegistrationStep.password;
 
-public class ST08_SelectDifferentCategoriesStep extends TestBase{
+public class ST08_SelectDifferentCategoriesStep extends Hooks {
 
     P02_LoginPage loginPage;
     P03_HomePage homePage;
     P04_ShoesPage shoesPage;
     @Given("user login to the app")
     public void userInLoginPage() {
-        prepareClassProperties("Chrome");
+        initialization("Chrome");
         startApplication();
     }
 

@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
+public class Hooks {
 
 	// define main properties
 	protected WebDriver driver;
@@ -28,7 +28,7 @@ public class TestBase {
 	private ChromeOptions options;
 	protected JavascriptExecutor js;
 
-	public void prepareClassProperties(String browser){
+	public void initialization(String browser){
 //		readProperty = new FileInputStream(
 //				System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\generalProperties.properties");
 //		prop = new Properties();
@@ -71,6 +71,7 @@ public class TestBase {
 	}
 
 	// Start nopcommerce demo Web Application
+
 	public void startApplication(){
 		// Maximize current window
 		driver.manage().window().maximize();
