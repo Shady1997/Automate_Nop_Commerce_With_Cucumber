@@ -4,3 +4,5 @@ org\example\pages\P03_HomePage.class
 org\example\database\DatabaseConnection.class
 org\example\pages\P02_LoginPage.class
 org\example\pages\PageBase.class
+org\example\pages\P06_CheckOutPage.class
+org\example\pages\P05_NotebookPage.class
